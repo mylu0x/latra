@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="my-32px max-w-800px mx-auto">
     <slot />
   </div>
 </template>
