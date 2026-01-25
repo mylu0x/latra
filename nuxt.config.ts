@@ -4,10 +4,13 @@ export default defineNuxtConfig({
   modules: ['@nuxt/hints', '@nuxt/icon', '@nuxt/image', '@nuxt/fonts', '@unocss/nuxt'],
   app: {
     head: {
-      title: 'Your title here',
+      title: 'Latra',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
       ]
     }
   },
