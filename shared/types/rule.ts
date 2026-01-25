@@ -25,6 +25,7 @@ type Rule = {
   id: string;
   name: string;
   desc: string;
+  route?: string;
   map: CharMap
 };
 
