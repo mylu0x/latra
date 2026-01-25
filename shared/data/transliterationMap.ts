@@ -24,3 +24,5 @@ const transliterationMap: Rules = {
     }
   }
 }
+
+export default function (): Rules { return transliterationMap }
