@@ -804,6 +804,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/circle-flags@npm:^1.2.10":
+  version: 1.2.10
+  resolution: "@iconify-json/circle-flags@npm:1.2.10"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/8efe8f85de71aa32e17cc1ad815ed212c27cb2b1e2678aac1dcf5d870f083fec291432ca506dcb8d9117728e1fa8bf779fbf1e50b0cad479a1304e5246b3b7a0
+  languageName: node
+  linkType: hard
+
 "@iconify-json/tabler@npm:^1.2.26":
   version: 1.2.26
   resolution: "@iconify-json/tabler@npm:1.2.26"
@@ -5846,6 +5855,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "latra@workspace:."
   dependencies:
+    "@iconify-json/circle-flags": "npm:^1.2.10"
     "@iconify-json/tabler": "npm:^1.2.26"
     "@nuxt/fonts": "npm:0.12.1"
     "@nuxt/hints": "npm:1.0.0-alpha.3"
