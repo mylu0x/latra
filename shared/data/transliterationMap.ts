@@ -8,6 +8,7 @@ const transliterationMap: Rules = {
       ru: { // Russian
         langName: 'Russian',
         langCode: 'ru',
+        route: '/',
         rules: {
           iso9: { // ISO 9
             id: 'iso9',

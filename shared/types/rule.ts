@@ -15,6 +15,7 @@ type Writing = {
 type Lang = {
   langName: string;
   langCode: string;
+  route?: string;
   rules: {
     [rule: string]: Rule
   };
@@ -25,7 +26,6 @@ type Rule = {
   id: string;
   name: string;
   desc: string;
-  route?: string;
   map: CharMap
 };
 
