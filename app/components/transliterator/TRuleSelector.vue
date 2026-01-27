@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { transliterationMap } from "#shared/data/transliterationMap";
 import { OnClickOutside } from '@vueuse/components';
 import getRule from "#shared/utils/getRule";
 import getLang from "#shared/utils/getLang";
