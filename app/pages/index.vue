@@ -7,6 +7,10 @@ type Update = {
 const updates: Update[] = [
   {
     date: '2026-01-27',
+    content: 'Added the GOST 7.79 rule for Russian'
+  },
+  {
+    date: '2026-01-27',
     content: 'Added Russian transliterator'
   }
 ];

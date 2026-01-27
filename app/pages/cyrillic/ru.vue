@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const userInput = ref<string>('');
 const result = computed(() => transliterate('cyrillic', 'ru', ruleName.value, userInput.value));
-const ruleName = ref<string>('iso9');
+const ruleName = ref<string>('iso_9_1995');
 
 const copy = (text: string) => {
   navigator.clipboard.writeText(text);
