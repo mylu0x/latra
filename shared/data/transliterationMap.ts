@@ -11,7 +11,7 @@ export const transliterationMap: Rules = {
         route: '/cyrillic/ru',
         rules: {
           iso9: { // ISO 9
-            id: 'iso-9-1995',
+            id: 'iso9',
             name: 'ISO 9',
             desc: 'International standard for converting cyrillic into latin system',
             map: {

@@ -20,6 +20,7 @@ const getClasses = (direction: 'top' | 'bottom') => {
         <span>Clear</span>
       </button>
     </div>
+    <slot />
     <div class="bg-gray-1 flex p-4px gap-4px" :class="getClasses('bottom')">
       <button @click="$emit('copyResult')" class="text-14px flex items-center justify-center w-80px py-6px hover:bg-gray-1 transition-all-50 bg-white rounded-8px b-(solid 1px gray-2) shadow-sm gap-3px text-gray-9 leading-none">
         <Icon name="tabler:copy" />
