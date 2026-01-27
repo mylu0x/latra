@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { transliterationMap } from "#shared/data/transliterationMap";
 import { OnClickOutside } from '@vueuse/components';
+import getRule from "#shared/utils/getRule";
+import getLang from "#shared/utils/getLang";
 
 const props = defineProps<{
   writing: string;
@@ -8,27 +10,8 @@ const props = defineProps<{
   rule: string;
 }>();
 const model = defineModel<string>();
-const rule = computed<Rule>(() => {
-  const selectedWriting = transliterationMap[props.writing];
-  if (!selectedWriting) throw new Error(`Writing ${props.writing} is not found`);
-
-  const selectedLang = selectedWriting.languages[props.lang];
-  if (!selectedLang) throw new Error(`Lang ${props.lang} is not found`);
-
-  const selectedRule = selectedLang.rules[props.rule];
-  if (!selectedRule) throw new Error(`Rule ${props.rule} is not found`);
-
-  return selectedRule;
-});
-const lang = computed<Lang>(() => {
-  const selectedWriting = transliterationMap[props.writing];
-  if (!selectedWriting) throw new Error(`Writing ${props.writing} is not found`);
-
-  const selectedLang = selectedWriting.languages[props.lang];
-  if (!selectedLang) throw new Error(`Lang ${props.lang} is not found`);
-
-  return selectedLang;
-});
+const rule = computed<Rule>(() => getRule(props.writing, props.lang, props.rule));
+const lang = computed<Lang>(() => getLang(props.writing, props.lang));
 const isOpen = ref<boolean>(false);
 </script>
 
