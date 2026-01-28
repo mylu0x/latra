@@ -15,8 +15,8 @@ const isOpen = ref<boolean>(false);
 </script>
 
 <template>
-  <OnClickOutside @trigger="isOpen = false" class="flex w-full py-6px relative">
-    <button @click="isOpen = !isOpen" class="flex items-center justify-center h-full b-(solid 1px gray-2) w-full rounded-8px hover:bg-gray-1 transition-all-50">
+  <OnClickOutside @trigger="isOpen = false" class="flex w-full py-6px relative z-999">
+    <button @click="isOpen = !isOpen" class="flex items-center justify-center h-full b-(solid 1px gray-2) w-full rounded-8px hover:bg-gray-1 transition-all-50 max-md:h-35px">
       <span class="leading-none font-500 text-gray-8">{{ rule.name }}</span>
     </button>
     <div v-show="isOpen" class="absolute mt-32px left-1/2 translate-x-[-50%]">
