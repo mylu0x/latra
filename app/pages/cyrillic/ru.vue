@@ -12,7 +12,7 @@ const clearBothInput = () => userInput.value = '';
 
 <template>
   <div class="p-6px">
-    <TUserInput v-model="userInput" label="Cyrillic Input" id="user-input" />
+    <TUserInput v-model="userInput" label="Cyrillic Input" id="user-input" placeholder="Привет, как ты?" />
     <TActionBar @copyUserInput="copy(userInput)" @clearUserInput="clearBothInput" @copyResult="copy(result)" @clearResult="clearBothInput">
       <TRuleSelector v-model="ruleName" writing="cyrillic" lang="ru" :rule="ruleName" />
     </TActionBar>
