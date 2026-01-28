@@ -13,7 +13,7 @@ const data = transliterationMap;
       <div v-for="writing in data" :id="writing.writingCode" class="b-(dashed 1px gray-2) p-6px rounded-12px shadow-sm flex flex-col gap-2px bg-white">
         <p class="text-12px text-gray-8 text-center">{{ writing.writingName }}</p>
         <div class="flex flex-col gap-3px">
-          <SidebarLink v-for="lang in writing.languages" text="Russian" :icon="`circle-flags:lang-${lang.langCode}`" :to="lang.route" />
+          <SidebarLink v-for="lang in writing.languages" :text="lang.langName" :icon="`circle-flags:lang-${lang.langCode}`" :to="lang.route" />
         </div>
       </div>
     </section>
