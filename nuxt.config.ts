@@ -8,7 +8,13 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'This is a web tool to convert characters into Latin letters.' }
+        { name: 'description', content: 'This is a web tool to convert characters into Latin letters.' },
+        { property: 'og:title', content: 'Latra' },
+        { property: 'og:description', content: 'This is a web tool to convert characters into Latin letters.' },
+        { property: 'og:url', content: 'https://latra.pages.dev' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:site_name', content: 'Latra' },
+        { property: 'og:locale', content: 'en_US' }
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon.png' }
