@@ -7,7 +7,8 @@ export default defineNuxtConfig({
       title: 'Latra',
       meta: [
         { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'This is a web tool to convert characters into Latin letters.' }
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon.png' }
