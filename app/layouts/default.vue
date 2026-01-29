@@ -12,6 +12,12 @@
       </div>
     </div>
   </div>
+  <div class="absolute top-0 left-0">
+    <a href="https://github.com/mylu0x/latra" target="_blank" rel="noreferrer noopener" class="flex items-center justify-center gap-4px bg-gray-2 text-gray-8 font-500 px-16px py-4px rounded-br-8px transition-all-100 hover:bg-gray-3">
+      <Icon name="tabler:brand-github-filled" />
+      <span class="text-14px">GitHub Repo</span>
+    </a>
+  </div>
 </template>
 
 <style scoped>
