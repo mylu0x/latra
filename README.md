@@ -1,5 +1,3 @@
-<img src="./preview.png" width="400">
-
 # Latra
 **Latra** is a webtool that converts characters into Latin letters.
 
