@@ -308,7 +308,7 @@ export const transliterationMap: Rules = {
       el: {
         langName: 'Greek',
         langCode: 'el',
-        route: 'greek/el',
+        route: '/greek/el',
         rules: {
           iso_843_1997: {
             id: 'iso_843_1997',
