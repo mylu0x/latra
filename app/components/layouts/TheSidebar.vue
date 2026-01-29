@@ -9,7 +9,7 @@ const data = transliterationMap;
     <section class="flex flex-col gap-6px">
       <SidebarPageLink name="Home" icon="tabler:home" to="/" />
     </section>
-    <section class="px-5px">
+    <section class="px-5px flex flex-col gap-4px">
       <div v-for="writing in data" :id="writing.writingCode" class="b-(dashed 1px gray-2) p-6px rounded-12px shadow-sm flex flex-col gap-2px bg-white">
         <p class="text-12px text-gray-8 text-center">{{ writing.writingName }}</p>
         <div class="flex flex-col gap-3px">
