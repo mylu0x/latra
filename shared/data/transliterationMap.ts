@@ -419,13 +419,14 @@ export const transliterationMap: Rules = {
       hy: {
         langName: 'Armenian',
         langCode: 'hy',
+        route: '/armenian/hy',
         rules: {
           iso_9985_1996: {
             id: 'iso_9985_1996',
             name: 'ISO 9985',
             desc: 'International standard for converting Armenian letters into Latin scripts',
             map: {
-              'A': 'A', 'a': 'a',
+              'Ա': 'A', 'ա': 'a',
               'Բ': 'B', 'բ': 'b',
               'Գ': 'G', 'գ': 'g',
               'Դ': 'D', 'դ': 'd',
