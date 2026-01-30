@@ -93,7 +93,7 @@ export const transliterationMap: Rules = {
           myls_ru_a: {
             id: 'myls_ru_a',
             name: 'Mylstyle A',
-            desc: 'Original standard for converting Russian letters into Latin letters (One-to-one)',
+            desc: 'Original standard for converting Russian letters into Latin letters (One-to-One)',
             map: {
               'А': 'A', 'а': 'a',
               'Б': 'B', 'б': 'b',
@@ -220,7 +220,7 @@ export const transliterationMap: Rules = {
           myls_uk_a: {
             id: 'myls_uk_a',
             name: 'Mylstyle A',
-            desc: 'Original standard for converting Ukrainian letters into Latin letters (One-to-one)',
+            desc: 'Original standard for converting Ukrainian letters into Latin letters (One-to-One)',
             map: {
               'А': 'A', 'а': 'a',
               'Б': 'B', 'б': 'b',
@@ -313,7 +313,7 @@ export const transliterationMap: Rules = {
           iso_843_1997: {
             id: 'iso_843_1997',
             name: 'ISO 843',
-            desc: 'Simplified standard for converting Greek letters into Latin scripts',
+            desc: 'Simplified standard for converting Greek letters into Latin letters',
             map: {
               'Α': 'A', 'α': 'a',
               'Ά': 'Á', 'ά': 'á',
@@ -366,7 +366,7 @@ export const transliterationMap: Rules = {
           iso_9984_1996: {
             id: 'iso_9984_1996',
             name: 'ISO 9984',
-            desc: 'International standard for converting Georgian letters into Latin scripts',
+            desc: 'International standard for converting Georgian letters into Latin letters',
             map: {
               'ა': 'a',
               'ბ': 'b',
