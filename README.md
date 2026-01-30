@@ -13,6 +13,8 @@
    - Greek (Modern)
 4. Georgian
    - Georgian
+5. Armenian
+   - Armenian
 
 ## License
 This project is licensed under the MIT License.  
