@@ -20,12 +20,13 @@ export default function (writing: string, lang: string, rule: string, input: str
       .replace(/ΕΥ/g, 'EU').replace(/Ευ/g, 'Eu').replace(/εΥ/g, 'eU').replace(/ευ/g, 'eu')
       .replace(/ΕΎ/g, 'EÚ').replace(/Εύ/g, 'Eú').replace(/εΎ/g, 'eÚ').replace(/εύ/g, 'eú')
       .replace(/ΟΥ/g, 'OU').replace(/Ου/g, 'Ou').replace(/οΥ/g, 'oU').replace(/ου/g, 'ou')
-      .replace(/ΟΎ/g, 'OÚ').replace(/Ού/g, 'Oú').replace(/οΎ/g, 'oÚ').replace(/ού/g, 'oú')
-  } else {
-    console.log('its not el')
+      .replace(/ΟΎ/g, 'OÚ').replace(/Ού/g, 'Oú').replace(/οΎ/g, 'oÚ').replace(/ού/g, 'oú');
+  } else if (selectedLang.langCode === 'hy') {
+    normalizedInput = normalizedInput
+      .replace(/և/g, 'ev').replace(/եւ/g, 'ev');
   }
 
-  normalizedInput = Array.from(normalizedInput).map(char => selectedRule.map[char] ?? char).join('')
+  normalizedInput = Array.from(normalizedInput).map(char => selectedRule.map[char] ?? char).join('');
 
   return normalizedInput;
 }
