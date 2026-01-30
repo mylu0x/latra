@@ -13,7 +13,7 @@ export const transliterationMap: Rules = {
           iso_9_1995: { // ISO 9
             id: 'iso_9_1995',
             name: 'ISO 9',
-            desc: 'International standard for converting cyrillic into latin scripts',
+            desc: 'International standard for converting Cyrillic letters into Latin letters',
             map: {
               'А': 'A', 'а': 'a',
               'Б': 'B', 'б': 'b',
@@ -53,7 +53,7 @@ export const transliterationMap: Rules = {
           gost7_79_2000b: {
             id: 'gost7_79_2000b',
             name: 'GOST 7.79',
-            desc: 'Simplified standard for converting cyrillic into latin scripts',
+            desc: 'Simplified standard for converting Cyrillic letters into Latin letters',
             map: {
               'А': 'A', 'а': 'a',
               'Б': 'B', 'б': 'b',
@@ -93,7 +93,7 @@ export const transliterationMap: Rules = {
           myls_ru_a: {
             id: 'myls_ru_a',
             name: 'Mylstyle A',
-            desc: 'Original standard for converting cyrillic letters into latin letters (one-to-one)',
+            desc: 'Original standard for converting Russian letters into Latin letters (One-to-one)',
             map: {
               'А': 'A', 'а': 'a',
               'Б': 'B', 'б': 'b',
@@ -133,7 +133,7 @@ export const transliterationMap: Rules = {
           myls_ru_b: {
             id: 'myls_ru_b',
             name: 'Mylstyle B',
-            desc: 'Original standard for converting cyrillic letters into latin letters (readability-focused)',
+            desc: 'Original standard for converting Russian letters into Latin letters (Readability-focused)',
             map: {
               'А': 'A', 'а': 'a',
               'Б': 'B', 'б': 'b',
@@ -180,7 +180,7 @@ export const transliterationMap: Rules = {
           iso_9_1995: { // ISO 9
             id: 'iso_9_1995',
             name: 'ISO 9',
-            desc: 'International standard for converting cyrillic into latin scripts',
+            desc: 'International standard for converting Cyrillic letters into Latin letters',
             map: {
               'А': 'A', 'а': 'a',
               'Б': 'B', 'б': 'b',
@@ -220,7 +220,7 @@ export const transliterationMap: Rules = {
           myls_uk_a: {
             id: 'myls_uk_a',
             name: 'Mylstyle A',
-            desc: 'Original standard for converting Ukrainian letters into latin letters (one-to-one)',
+            desc: 'Original standard for converting Ukrainian letters into Latin letters (One-to-one)',
             map: {
               'А': 'A', 'а': 'a',
               'Б': 'B', 'б': 'b',
@@ -260,7 +260,7 @@ export const transliterationMap: Rules = {
           myls_uk_b: {
             id: 'myls_uk_b',
             name: 'Mylstyle B',
-            desc: 'Original standard for converting Ukrainian letters into latin letters (readability-focused)',
+            desc: 'Original standard for converting Ukrainian letters into latin letters (Readability-focused)',
             map: {
               'А': 'A', 'а': 'a',
               'Б': 'B', 'б': 'b',
@@ -313,7 +313,7 @@ export const transliterationMap: Rules = {
           iso_843_1997: {
             id: 'iso_843_1997',
             name: 'ISO 843',
-            desc: 'Simplified standard for converting greek letters into latin scripts',
+            desc: 'Simplified standard for converting Greek letters into Latin scripts',
             map: {
               'Α': 'A', 'α': 'a',
               'Ά': 'Á', 'ά': 'á',
@@ -366,7 +366,7 @@ export const transliterationMap: Rules = {
           iso_9984_1996: {
             id: 'iso_9984_1996',
             name: 'ISO 9984',
-            desc: 'International standard for converting georgian letters into latin scripts',
+            desc: 'International standard for converting Georgian letters into Latin scripts',
             map: {
               'ა': 'a',
               'ბ': 'b',
@@ -424,7 +424,7 @@ export const transliterationMap: Rules = {
           iso_9985_1996: {
             id: 'iso_9985_1996',
             name: 'ISO 9985',
-            desc: 'International standard for converting Armenian letters into Latin scripts',
+            desc: 'International standard for converting Armenian letters into Latin letters',
             map: {
               'Ա': 'A', 'ա': 'a',
               'Բ': 'B', 'բ': 'b',
