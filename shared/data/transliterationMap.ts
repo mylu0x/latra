@@ -353,5 +353,63 @@ export const transliterationMap: Rules = {
         }
       }
     }
+  },
+  georgian: {
+    writingName: 'Georgian',
+    writingCode: 'georgian',
+    languages: {
+      ka: {
+        langName: 'Georgian',
+        langCode: 'ka',
+        route: '/georgian/ka',
+        rules: {
+          iso_9984_1996: {
+            id: 'iso_9984_1996',
+            name: 'ISO 9984',
+            desc: 'International standard for converting georgian letters into latin scripts',
+            map: {
+              'ა': 'a',
+              'ბ': 'b',
+              'გ': 'g',
+              'დ': 'd',
+              'ე': 'e',
+              'ვ': 'v',
+              'ზ': 'z',
+              'ჱ': 'ē',
+              'თ': 't̕',
+              'ი': 'i',
+              'კ': 'k',
+              'ლ': 'l',
+              'მ': 'm',
+              'ნ': 'n',
+              'ჲ': 'y',
+              'ო': 'o',
+              'პ': 'p',
+              'ჟ': 'ž',
+              'რ': 'r',
+              'ს': 's',
+              'ტ': 't',
+              'ჳ': 'w',
+              'უ': 'u',
+              'ფ': 'p̕',
+              'ქ': 'k̕',
+              'ღ': 'ḡ',
+              'ყ': 'q',
+              'შ': 'š',
+              'ჩ': 'č̕',
+              'ც': 'c̕',
+              'ძ': 'j',
+              'წ': 'c',
+              'ჭ': 'č',
+              'ხ': 'x',
+              'ჴ': 'ẖ',
+              'ჯ': 'ǰ',
+              'ჰ': 'h',
+              'ჵ': 'ō'
+            }
+          }
+        }
+      }
+    }
   }
 }
