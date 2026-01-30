@@ -9,6 +9,10 @@
 2. Ukrainian
    - ISO 9
    - Mylstyle A & B
+3. Greek
+   - Greek (Modern)
+4. Georgian
+   - Georgian
 
 ## License
 This project is licensed under the MIT License.  
