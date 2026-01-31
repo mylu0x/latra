@@ -9,11 +9,14 @@
 2. Ukrainian
    - ISO 9
    - Mylstyle A & B
-3. Greek
+3. Kazakh
+   - ISO 9
+   - Kazakh Latin (2018 Official)
+4. Greek
    - Greek (Modern)
-4. Georgian
+5. Georgian
    - Georgian
-5. Armenian
+6. Armenian
    - Armenian
 
 ## License
