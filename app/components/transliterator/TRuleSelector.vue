@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { OnClickOutside } from '@vueuse/components';
-import getRule from "#shared/utils/getRule";
-import getLang from "#shared/utils/getLang";
+import getMapData from "#shared/utils/getMapData";
 
 const props = defineProps<{
   writing: string;
@@ -9,8 +8,8 @@ const props = defineProps<{
   rule: string;
 }>();
 const model = defineModel<string>();
-const rule = computed<Rule>(() => getRule(props.writing, props.lang, props.rule));
-const lang = computed<Lang>(() => getLang(props.writing, props.lang));
+const rule = computed<Rule>(() => getMapData(props.writing, props.lang, props.rule));
+const lang = computed<Lang>(() => getMapData(props.writing, props.lang));
 const isOpen = ref<boolean>(false);
 </script>
 

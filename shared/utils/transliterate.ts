@@ -1,19 +1,11 @@
-import { transliterationMaps } from '#shared/data/transliteration';
+import getMapData from './getMapData';
 
 export default function (writing: string, lang: string, rule: string, input: string): string {
-  const selectedWriting = transliterationMaps[writing];
-  if (!selectedWriting) throw new Error(`Writing ${writing} is not found`);
-
-  const selectedLang = selectedWriting.languages[lang];
-  if (!selectedLang) throw new Error(`Lang ${lang} is not found`);
-
-  const selectedRule = selectedLang.rules[rule];
-  if (!selectedRule) throw new Error(`Rule ${rule} is not found`);
+  const ruleData = getMapData(writing, lang, rule);
 
   let normalizedInput = input.normalize('NFC');
-
   normalizedInput = preprocess(normalizedInput, lang);
-  normalizedInput = Array.from(normalizedInput).map(char => selectedRule.map[char] ?? char).join('');
+  normalizedInput = Array.from(normalizedInput).map(char => ruleData.map[char] ?? char).join('');
 
   return normalizedInput;
 }
