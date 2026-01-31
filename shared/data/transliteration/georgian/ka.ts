@@ -2,7 +2,6 @@ import type { Lang } from "#shared/types/rule";
 
 export const ka: Lang = {
   langName: 'Georgian',
-  path: '/georgian/ka',
   rules: {
     iso_9984_1996: {
       name: 'ISO 9984',

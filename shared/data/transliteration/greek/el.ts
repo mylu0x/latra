@@ -2,7 +2,6 @@ import type { Lang } from "#shared/types/rule";
 
 export const el: Lang = {
   langName: 'Greek',
-  path: '/greek/el',
   rules: {
     iso_843_1997: {
       name: 'ISO 843',

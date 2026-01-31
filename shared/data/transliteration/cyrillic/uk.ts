@@ -2,7 +2,6 @@ import type { Lang } from "#shared/types/rule";
 
 export const uk: Lang = {
   langName: 'Ukrainian',
-  path: '/cyrillic/uk',
   rules: {
     iso_9_1995: {
       name: 'ISO 9',

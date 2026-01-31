@@ -13,7 +13,6 @@ type Writing = {
 // Represents a language, e.g., Russian or Ukrainian
 type Lang = {
   langName: string;
-  path?: string;
   rules: {
     [rule: string]: Rule
   };

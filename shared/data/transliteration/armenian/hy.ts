@@ -2,7 +2,6 @@ import type { Lang } from "#shared/types/rule";
 
 export const hy: Lang = {
   langName: 'Armenian',
-  path: '/armenian/hy',
   rules: {
     iso_9985_1996: {
       name: 'ISO 9985',
