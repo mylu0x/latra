@@ -3,15 +3,12 @@ import type { Rules } from '#shared/types/rule';
 export const transliterationMap: Rules = {
   cyrillic: {
     writingName: 'Cyrillic',
-    writingCode: 'cyrillic',
     languages: {
-      ru: { // Russian
+      ru: {
         langName: 'Russian',
-        langCode: 'ru',
-        route: '/cyrillic/ru',
+        path: '/cyrillic/ru',
         rules: {
-          iso_9_1995: { // ISO 9
-            id: 'iso_9_1995',
+          iso_9_1995: {
             name: 'ISO 9',
             desc: 'International standard for converting Cyrillic letters into Latin letters',
             map: {
@@ -51,7 +48,6 @@ export const transliterationMap: Rules = {
             }
           },
           gost7_79_2000b: {
-            id: 'gost7_79_2000b',
             name: 'GOST 7.79',
             desc: 'Simplified standard for converting Cyrillic letters into Latin letters',
             map: {
@@ -91,7 +87,6 @@ export const transliterationMap: Rules = {
             }
           },
           myls_ru_a: {
-            id: 'myls_ru_a',
             name: 'Mylstyle A',
             desc: 'Original standard for converting Russian letters into Latin letters (One-to-One)',
             map: {
@@ -131,7 +126,6 @@ export const transliterationMap: Rules = {
             }
           },
           myls_ru_b: {
-            id: 'myls_ru_b',
             name: 'Mylstyle B',
             desc: 'Original standard for converting Russian letters into Latin letters (Readability-focused)',
             map: {
@@ -174,11 +168,9 @@ export const transliterationMap: Rules = {
       },
       uk: {
         langName: 'Ukrainian',
-        langCode: 'uk',
-        route: '/cyrillic/uk',
+        path: '/cyrillic/uk',
         rules: {
-          iso_9_1995: { // ISO 9
-            id: 'iso_9_1995',
+          iso_9_1995: {
             name: 'ISO 9',
             desc: 'International standard for converting Cyrillic letters into Latin letters',
             map: {
@@ -218,7 +210,6 @@ export const transliterationMap: Rules = {
             }
           },
           myls_uk_a: {
-            id: 'myls_uk_a',
             name: 'Mylstyle A',
             desc: 'Original standard for converting Ukrainian letters into Latin letters (One-to-One)',
             map: {
@@ -258,7 +249,6 @@ export const transliterationMap: Rules = {
             }
           },
           myls_uk_b: {
-            id: 'myls_uk_b',
             name: 'Mylstyle B',
             desc: 'Original standard for converting Ukrainian letters into latin letters (Readability-focused)',
             map: {
@@ -303,15 +293,12 @@ export const transliterationMap: Rules = {
   },
   greek: {
     writingName: 'Greek',
-    writingCode: 'greek',
     languages: {
       el: {
         langName: 'Greek',
-        langCode: 'el',
-        route: '/greek/el',
+        path: '/greek/el',
         rules: {
           iso_843_1997: {
-            id: 'iso_843_1997',
             name: 'ISO 843',
             desc: 'Simplified standard for converting Greek letters into Latin letters',
             map: {
@@ -356,15 +343,12 @@ export const transliterationMap: Rules = {
   },
   georgian: {
     writingName: 'Georgian',
-    writingCode: 'georgian',
     languages: {
       ka: {
         langName: 'Georgian',
-        langCode: 'ka',
-        route: '/georgian/ka',
+        path: '/georgian/ka',
         rules: {
           iso_9984_1996: {
-            id: 'iso_9984_1996',
             name: 'ISO 9984',
             desc: 'International standard for converting Georgian letters into Latin letters',
             map: {
@@ -414,15 +398,12 @@ export const transliterationMap: Rules = {
   },
   armenian: {
     writingName: 'Armenian',
-    writingCode: 'armenian',
     languages: {
       hy: {
         langName: 'Armenian',
-        langCode: 'hy',
-        route: '/armenian/hy',
+        path: '/armenian/hy',
         rules: {
           iso_9985_1996: {
-            id: 'iso_9985_1996',
             name: 'ISO 9985',
             desc: 'International standard for converting Armenian letters into Latin letters',
             map: {

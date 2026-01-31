@@ -13,7 +13,7 @@ export default function (writing: string, lang: string, rule: string, input: str
   let normalizedInput = input.normalize('NFC');
 
   // for Greek
-  if (selectedLang.langCode === 'el') {
+  if (lang === 'el') {
     normalizedInput = normalizedInput
       .replace(/ΑΥ/g, 'AU').replace(/Αυ/g, 'Au').replace(/αΥ/g, 'aU').replace(/αυ/g, 'au')
       .replace(/ΑΎ/g, 'AÚ').replace(/Αύ/g, 'Aú').replace(/αΎ/g, 'aÚ').replace(/αύ/g, 'aú')
@@ -21,7 +21,7 @@ export default function (writing: string, lang: string, rule: string, input: str
       .replace(/ΕΎ/g, 'EÚ').replace(/Εύ/g, 'Eú').replace(/εΎ/g, 'eÚ').replace(/εύ/g, 'eú')
       .replace(/ΟΥ/g, 'OU').replace(/Ου/g, 'Ou').replace(/οΥ/g, 'oU').replace(/ου/g, 'ou')
       .replace(/ΟΎ/g, 'OÚ').replace(/Ού/g, 'Oú').replace(/οΎ/g, 'oÚ').replace(/ού/g, 'oú');
-  } else if (selectedLang.langCode === 'hy') {
+  } else if (lang === 'hy') {
     normalizedInput = normalizedInput
       .replace(/և/g, 'ev').replace(/եւ/g, 'ev');
   }

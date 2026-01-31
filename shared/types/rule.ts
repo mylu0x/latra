@@ -5,7 +5,6 @@ type Rules = {
 // Represents a writing system, e.g., Latin or Cyrillic
 type Writing = {
   writingName: string;
-  writingCode: string;
   languages: {
     [lang: string]: Lang
   };
@@ -14,8 +13,7 @@ type Writing = {
 // Represents a language, e.g., Russian or Ukrainian
 type Lang = {
   langName: string;
-  langCode: string;
-  route?: string;
+  path?: string;
   rules: {
     [rule: string]: Rule
   };
@@ -23,7 +21,6 @@ type Lang = {
 
 // Represents a rule, e.g., ISO 9 or GOST
 type Rule = {
-  id: string;
   name: string;
   desc: string;
   map: CharMap
