@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { OnClickOutside } from '@vueuse/components';
-import getRule from "#shared/utils/getRule";
-import getLang from "#shared/utils/getLang";
+import getMapData from "#shared/utils/getMapData";
 
 const props = defineProps<{
   writing: string;
@@ -9,8 +8,8 @@ const props = defineProps<{
   rule: string;
 }>();
 const model = defineModel<string>();
-const rule = computed<Rule>(() => getRule(props.writing, props.lang, props.rule));
-const lang = computed<Lang>(() => getLang(props.writing, props.lang));
+const rule = computed<Rule>(() => getMapData(props.writing, props.lang, props.rule));
+const lang = computed<Lang>(() => getMapData(props.writing, props.lang));
 const isOpen = ref<boolean>(false);
 </script>
 
@@ -21,10 +20,10 @@ const isOpen = ref<boolean>(false);
     </button>
     <div v-show="isOpen" class="absolute mt-32px left-1/2 translate-x-[-50%]">
       <div class="translate-x-[1/2] bg-white z-999 b-(solid 1px gray-2) w-400px shadow-md p-6px rounded-14px">
-        <button v-for="rule in lang.rules" @click="model = rule.id" class="flex justify-between px-16px py-8px hover:bg-gray-1 rounded-8px">
+        <button v-for="(rule, key) in lang.rules" :key @click="model = key.toString()" class="flex justify-between px-16px py-8px hover:bg-gray-1 rounded-8px">
           <span class="flex flex-col justify-center w-120px text-left shrink-0">
             <span class="font-600 text-gray-9 text-16px">{{ rule.name }}</span>
-            <span class="text-12px text-gray-7 font-mono font-500">{{ rule.id }}</span>
+            <span class="text-12px text-gray-7 font-mono font-500">{{ key }}</span>
           </span>
           <span class="text-12px text-gray-7 text-left flex items-center">{{ rule.desc }}</span>
         </button>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { transliterationMap } from "#shared/data/transliterationMap";
+import { transliterationMaps } from '#shared/data/transliteration';
 
-const data = transliterationMap;
+const data = transliterationMaps;
 </script>
 
 <template>
@@ -10,10 +10,10 @@ const data = transliterationMap;
       <SidebarPageLink name="Home" icon="tabler:home" to="/" />
     </section>
     <section class="px-5px flex flex-col gap-4px">
-      <div v-for="writing in data" :id="writing.writingCode" class="b-(dashed 1px gray-2) p-6px rounded-12px shadow-sm flex flex-col gap-2px bg-white">
+      <div v-for="(writing, writingKey) in data" :id="writingKey.toString()" class="b-(dashed 1px gray-2) p-6px rounded-12px shadow-sm flex flex-col gap-2px bg-white">
         <p class="text-12px text-gray-8 text-center">{{ writing.writingName }}</p>
         <div class="flex flex-col gap-3px">
-          <SidebarLink v-for="lang in writing.languages" :text="lang.langName" :icon="`circle-flags:lang-${lang.langCode}`" :to="lang.route" />
+          <SidebarLink v-for="(lang, langKey) in writing.languages" :text="lang.langName" :icon="`circle-flags:lang-${langKey}`" :to="`/${writingKey}/${langKey}`" />
         </div>
       </div>
     </section>
