@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { transliterationMap } from "#shared/data/transliterationMap";
+import { transliterationMaps } from '#shared/data/transliteration';
 
-const data = transliterationMap;
+const data = transliterationMaps;
 </script>
 
 <template>
