@@ -104,7 +104,7 @@ export const kk: Lang = {
       desc: 'Original standard for converting Kazakh letters into Latin letters (One-to-One)',
       map: {
         'А': 'A', 'а': 'a',
-        'Ә': 'Æ', 'ә': 'æ',
+        'Ә': 'Ä', 'ә': 'ä',
         'Б': 'B', 'б': 'b',
         'В': 'V', 'в': 'v',
         'Г': 'G', 'г': 'g',
@@ -123,7 +123,7 @@ export const kk: Lang = {
         'Н': 'N', 'н': 'n',
         'Ң': 'Ŋ', 'ң': 'ŋ',
         'О': 'O', 'о': 'o',
-        'Ө': 'Œ', 'ө': 'œ',
+        'Ө': 'Ö', 'ө': 'ö',
         'П': 'P', 'п': 'p',
         'Р': 'R', 'р': 'r',
         'С': 'S', 'с': 's',
