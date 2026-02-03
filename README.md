@@ -2,21 +2,16 @@
 **Latra** is a webtool that converts characters into Latin letters.
 
 ## Supported Languages
-1. Russian
-   - ISO 9
-   - GOST
-   - Mylstyle A & B
-2. Ukrainian
-   - ISO 9
-   - Mylstyle A & B
-3. Kazakh
-   - ISO 9
-   - Kazakh Latin (2018 Official)
-4. Greek
+1. Cyrillic
+   1. Russian
+   2. Ukrainian
+   3. Kazakh
+   4. Tajik
+2. Greek
    - Greek (Modern)
-5. Georgian
+3. Georgian
    - Georgian
-6. Armenian
+4. Armenian
    - Armenian
 
 ## License
