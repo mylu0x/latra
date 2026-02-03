@@ -2,8 +2,9 @@ import type { Writing } from '#shared/types/rule';
 import { ru } from './ru';
 import { uk } from './uk';
 import { kk } from './kk';
+import { tg } from './tg';
 
 export const cyrillic: Writing = {
   writingName: 'Cyrillic',
-  languages: { ru, uk, kk }
+  languages: { ru, uk, kk, tg }
 }
