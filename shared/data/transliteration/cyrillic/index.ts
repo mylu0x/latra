@@ -3,8 +3,9 @@ import { ru } from './ru';
 import { uk } from './uk';
 import { kk } from './kk';
 import { tg } from './tg';
+import { be } from './be';
 
 export const cyrillic: Writing = {
   writingName: 'Cyrillic',
-  languages: { ru, uk, kk, tg }
+  languages: { ru, uk, be, kk, tg }
 }
